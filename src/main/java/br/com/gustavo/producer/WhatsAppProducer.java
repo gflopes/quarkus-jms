@@ -21,7 +21,6 @@ public class WhatsAppProducer implements Runnable {
     @Inject
     ConnectionFactory connectionFactory;
 
-    private final Random random = new Random();
     private final ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 
     void onStart(@Observes StartupEvent ev) {
